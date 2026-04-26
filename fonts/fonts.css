@@ -1,5 +1,4 @@
 /* В этом файле вы импортируете все шрифты для сайта. Один из них вариативный и требует особенной настройки */
-/* В этом файле вы импортируете все шрифты для сайта. Один из них вариативный и требует особенной настройки */
 
 @font-face {
   font-display: swap;
@@ -8,7 +7,7 @@
     local('Inter-Variable'),
     url('Inter-Variable.woff2') format('woff2 supports variations'),
      url('Inter-Variable.woff2') format('woff2-variations');
-  font-weight: 400 700;
+  font-weight: 400 785; /* Исправлено: добавлено 785 */
   font-stretch: 100% 116.6%;
 }
 

@@ -223,6 +223,7 @@
   align-content: center;
 }
 
+/* Объединённый селектор card__icon-button */
 .card__icon-button {
 
   display: flex;
@@ -464,6 +465,7 @@ dialog::backdrop {
   line-height: var(--line-height-dialog);
 }
 
+/* Исправлена ошибка: пробел перед { */
 .dialog-button {
 
   min-inline-size: 257px;
