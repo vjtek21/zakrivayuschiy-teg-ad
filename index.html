@@ -393,15 +393,9 @@
       </svg>
       <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
       <form class="dialog__controller" method="dialog">
-        <button type="button" class="button dialog__button"
-          onclick="event.preventDefault(); event.stopPropagation(); window.dialog.close();">
+                <button type="submit" class="button dialog__button">
           <span class="button__text">ок</span>
         </button>
-        <script>
-          document.querySelector('.dialog__controller').addEventListener('submit', function (e) {
-            e.preventDefault();
-          });
-        </script>
       </form>
     </dialog>
   </main>

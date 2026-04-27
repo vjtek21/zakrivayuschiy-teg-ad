@@ -53,6 +53,9 @@
   line-height: 1;
   text-align: center;
 }
+.element {
+  font-variation-settings: 'wght' 400, 'wdth' 100;
+}
 
 /* Стили секций/карточек */
 .main__content {
