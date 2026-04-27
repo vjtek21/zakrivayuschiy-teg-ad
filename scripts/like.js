@@ -39,3 +39,25 @@ function setButtonText(heart, button) {
     );
   }
 }
+
+/* ========== ДОБАВИТЬ ЭТОТ КОД ========== */
+/* Работа с диалогом (модальным окном) */
+const dialog = document.getElementById('dialog');
+const saveButton = document.querySelector('.save__button');
+const dialogForm = document.querySelector('.dialog__controller');
+
+// Открытие диалога по кнопке "Сохранить на память"
+if (saveButton && dialog) {
+  saveButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    dialog.showModal();
+  });
+}
+
+// Закрытие диалога по кнопке "ОК" и предотвращение перезагрузки
+if (dialogForm && dialog) {
+  dialogForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    dialog.close();
+  });
+}

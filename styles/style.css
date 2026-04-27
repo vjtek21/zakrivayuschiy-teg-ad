@@ -53,9 +53,6 @@
   line-height: 1;
   text-align: center;
 }
-.element {
-  font-variation-settings: 'wght' 400, 'wdth' 100;
-}
 
 /* Стили секций/карточек */
 .main__content {
@@ -361,4 +358,17 @@
     flex-direction: column;
     align-items: center;
   }
+}
+/* Настройки вариативных шрифтов */
+.content__text,
+.button__text,
+.header__title,
+.header__description,
+.card__img-label {
+  font-variation-settings: 'wght' 400, 'wdth' 100;
+}
+
+/* Более жирный текст для заголовков */
+.section__title {
+  font-variation-settings: 'wght' 700, 'wdth' 100;
 }
