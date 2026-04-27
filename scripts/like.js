@@ -40,24 +40,23 @@ function setButtonText(heart, button) {
   }
 }
 
-/* ========== ДОБАВИТЬ ЭТОТ КОД ========== */
-/* Работа с диалогом (модальным окном) */
+/* ========== РАБОТА С ДИАЛОГОМ (МОДАЛЬНЫМ ОКНОМ) ========== */
 const dialog = document.getElementById('dialog');
 const saveButton = document.querySelector('.save__button');
-const dialogForm = document.querySelector('.dialog__controller');
+const okButton = document.querySelector('.dialog__button'); // ← кнопка "ОК"
 
-// Открытие диалога по кнопке "Сохранить на память"
+// Открытие диалога по кнопке "Сохранить в памяти"
 if (saveButton && dialog) {
   saveButton.addEventListener('click', (e) => {
-    e.preventDefault();
+    e.preventDefault(); // ← предотвращаем перезагрузку
     dialog.showModal();
   });
 }
 
-// Закрытие диалога по кнопке "ОК" и предотвращение перезагрузки
-if (dialogForm && dialog) {
-  dialogForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+// Закрытие диалога по клику на кнопку "ОК" (основной способ для тестов)
+if (okButton && dialog) {
+  okButton.addEventListener('click', (e) => {
+    e.preventDefault(); // ← предотвращаем перезагрузку
     dialog.close();
   });
 }
